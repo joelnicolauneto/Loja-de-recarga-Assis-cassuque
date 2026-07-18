@@ -1,0 +1,545 @@
+/* ===========================
+   PÁGINA DE COMPRA
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    radial-gradient(circle at top,#1b1b1b,#050505);
+
+    color:white;
+
+}
+
+
+
+/* CABEÇALHO */
+
+header{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+header h1{
+
+    color:#ffd400;
+
+    font-size:35px;
+
+    text-shadow:
+    0 0 10px #ffd400;
+
+}
+
+
+header p{
+
+    color:#ccc;
+
+    margin-top:10px;
+
+}
+
+
+
+/* ÁREA PRINCIPAL */
+
+.container{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:30px;
+
+}
+
+
+
+/* CAIXA DO FORMULÁRIO */
+
+.form-box{
+
+
+    width:450px;
+
+    padding:40px;
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:25px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+    box-shadow:
+
+    0 0 40px rgba(255,255,255,0.05);
+
+
+}
+
+
+
+/* TÍTULO */
+
+.form-box h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#00a8ff;
+
+    font-size:32px;
+
+}
+
+
+
+/* LABELS */
+
+label{
+
+    display:block;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+
+
+/* INPUTS */
+
+input,
+select{
+
+
+    width:100%;
+
+    padding:15px;
+
+
+    border-radius:12px;
+
+
+    border:none;
+
+
+    outline:none;
+
+
+    background:#111;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    border:1px solid #333;
+
+
+    transition:.4s;
+
+
+}
+
+
+
+input:focus,
+select:focus{
+
+
+    border-color:#00a8ff;
+
+
+    box-shadow:
+
+    0 0 15px #00a8ff;
+
+
+}
+
+
+
+/* PAGAMENTO */
+
+.pagamento{
+
+
+    margin-top:30px;
+
+
+    padding:20px;
+
+
+    border-radius:15px;
+
+
+    background:#090909;
+
+
+    border-left:
+
+    5px solid #ffd400;
+
+
+}
+
+
+.pagamento h3{
+
+
+    color:#ffd400;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+.pagamento strong{
+
+
+    display:block;
+
+
+    margin-top:15px;
+
+
+    font-size:25px;
+
+
+    color:white;
+
+
+}
+
+
+
+/* BOTÃO */
+
+button{
+
+
+    width:100%;
+
+
+    margin-top:30px;
+
+
+    padding:18px;
+
+
+    border:none;
+
+
+    border-radius:40px;
+
+
+    background:#00a8ff;
+
+
+    color:white;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 0 30px #00a8ff;
+
+
+}
+
+
+
+/* RODAPÉ */
+
+footer{
+
+
+    text-align:center;
+
+
+    padding:30px;
+
+
+    color:#aaa;
+
+
+}
+
+
+
+/* RESPONSIVO */
+
+@media(max-width:600px){
+
+
+.form-box{
+
+
+    width:100%;
+
+
+    padding:25px;
+
+
+}
+
+
+header h1{
+
+
+    font-size:25px;
+
+
+}
+
+
+}
+/* ===========================
+   COMPROVATIVO
+=========================== */
+
+
+.comprovativo{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:#080808;
+
+    border-left:5px solid #00ff88;
+
+}
+
+
+.comprovativo h3{
+
+    color:#00ff88;
+
+    margin-bottom:10px;
+
+}
+
+
+.comprovativo p{
+
+    color:#ccc;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.comprovativo input[type="file"]{
+
+    display:none;
+
+}
+
+
+
+.comprovativo label{
+
+    display:block;
+
+    text-align:center;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    background:#00ff88;
+
+    color:#000;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+
+
+.comprovativo label:hover{
+
+    box-shadow:0 0 25px #00ff88;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+#nomeArquivo{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:#aaa;
+
+}
+/* ===========================
+   VALORES RÁPIDOS
+=========================== */
+
+
+.valores-rapidos{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin:15px 0;
+
+}
+
+
+
+.valores-rapidos button{
+
+    flex:1;
+
+    min-width:80px;
+
+    margin:0;
+
+    padding:12px;
+
+    border-radius:20px;
+
+    background:#111;
+
+    border:1px solid #00a8ff;
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+
+
+.valores-rapidos button:hover{
+
+    background:#00a8ff;
+
+    box-shadow:0 0 20px #00a8ff;
+
+}
+/* ===========================
+   RESUMO DO PEDIDO
+=========================== */
+
+
+.resumo{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:#050505;
+
+    border:1px solid #00a8ff;
+
+    box-shadow:0 0 20px rgba(0,168,255,.3);
+
+}
+
+
+
+.resumo h3{
+
+    color:#00a8ff;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.resumo p{
+
+    color:#ccc;
+
+    margin:12px 0;
+
+}
+
+
+
+.resumo span{
+
+    color:white;
+
+    font-weight:bold;
+
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comprar Recarga - Loja de Recarga Assis Cassuque</title>
+
+    <link rel="stylesheet" href="css/comprar.css">
+
+    <script src="js/comprar.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>
+        Loja de Recarga Assis Cassuque
+    </h1>
+
+    <p>
+        Compra de recargas Africell e Unitel
+    </p>
+
+</header>
+
+
+
+<section class="container">
+
+
+<div class="form-box">
+
+
+<h2 id="tituloOperadora">
+    Comprar Recarga
+</h2>
+
+
+<form id="pedidoForm">
+
+
+<label>
+Nome completo
+</label>
+
+<input 
+type="text" 
+id="nome"
+placeholder="Digite seu nome"
+required>
+
+
+
+<label>
+Número para receber a recarga
+</label>
+
+<input 
+type="tel"
+id="numeroRecarga"
+placeholder="Ex: 923000000"
+required>
+
+
+
+<label>
+Seu WhatsApp
+</label>
+
+<input 
+type="tel"
+id="whatsapp"
+placeholder="Ex: 923000000"
+required>
+
+
+
+<label>
+Escolha o valor da recarga (Kz)
+</label>
+
+
+<div class="valores-rapidos">
+
+
+<button type="button" onclick="selecionarValor(500)">
+500 Kz
+</button>
+
+
+<button type="button" onclick="selecionarValor(1000)">
+1000 Kz
+</button>
+
+
+<button type="button" onclick="selecionarValor(2000)">
+2000 Kz
+</button>
+
+
+<button type="button" onclick="selecionarValor(5000)">
+5000 Kz
+</button>
+
+
+</div>
+
+
+
+<label>
+Ou digite outro valor
+</label>
+
+
+<input
+
+type="number"
+
+id="valor"
+
+placeholder="Digite o valor"
+
+required>
+
+
+
+<label>
+Operadora
+</label>
+
+<select id="operadora">
+
+<option value="Africell">
+Africell
+</option>
+
+<option value="Unitel">
+Unitel
+</option>
+
+</select>
+
+
+
+<div class="pagamento">
+
+<h3>
+Pagamento
+</h3>
+
+<p>
+Faça o pagamento pelo Multicaixa Express:
+</p>
+
+
+<strong>
+932 27 34 48
+</strong>
+
+
+</div>
+
+<!-- COMPROVATIVO DE PAGAMENTO -->
+
+<div class="comprovativo">
+
+<h3>
+📎 Anexar Comprovativo
+</h3>
+
+<p>
+Envie a foto ou PDF do pagamento realizado.
+</p>
+
+
+<label for="arquivoPagamento">
+
+Escolher ficheiro
+
+</label>
+
+
+<input 
+type="file"
+id="arquivoPagamento"
+accept="image/*,.pdf"
+required>
+
+
+<div id="nomeArquivo">
+
+Nenhum ficheiro selecionado
+
+</div>
+
+
+</div>
+
+<!-- RESUMO DO PEDIDO -->
+
+<div class="resumo" id="resumo">
+
+<h3>
+📋 Resumo do Pedido
+</h3>
+
+
+<p>
+Operadora:
+<span id="resumoOperadora">
+-
+</span>
+</p>
+
+
+<p>
+Nome:
+<span id="resumoNome">
+-
+</span>
+</p>
+
+
+<p>
+Número da Recarga:
+<span id="resumoNumero">
+-
+</span>
+</p>
+
+
+<p>
+Valor:
+<span id="resumoValor">
+-
+</span> Kz
+</p>
+
+
+</div>
+
+<button type="submit">
+
+Enviar Pedido pelo WhatsApp
+
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Loja de Recarga Assis Cassuque
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
